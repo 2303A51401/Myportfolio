@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR Connect – SR University</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #004C9B;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Banner */
+        .banner img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        /* Section container */
+        section {
+            padding: 40px;
+        }
+
+        h2 {
+            color: #004C9B;
+        }
+
+        /* Department Cards */
+        .dept-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .dept-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 15px;
+            width: 30%;
+        }
+
+        .dept-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Events */
+        .events {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .event-card {
+            background: white;
+            width: 45%;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Contact form */
+        form {
+            background: white;
+            padding: 20px;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 12px;
+            background: #004C9B;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #002F61;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .dept-card, .event-card {
+                width: 100%;
+            }
+            form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SR Connect – SR University</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#departments">Departments</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Banner Image -->
+    <div class="banner">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1"
+        alt="SR University Campus">
+    </div>
+
+    <!-- Departments Section -->
+    <section id="departments">
+        <h2>Departments at SR University</h2>
+
+        <div class="dept-container">
+
+            <div class="dept-card">
+                <img src="https://images.unsplash.com/photo-1526378722484-cc5c5100f1f4" alt="CSE Students">
+                <h3>Computer Science & AI</h3>
+                <p>Focuses on computing, machine learning, and intelligent systems.</p>
+                <p><b>HOD:</b> Dr. XYZ</p>
+                <p>Email: <a href="mailto:cse@sru.edu.in">cse@sru.edu.in</a></p>
+                <p>Phone: <a href="tel:+91000000000">0000000000</a></p>
+            </div>
+
+            <div class="dept-card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="ECE Lab">
+                <h3>Electronics & Communication Engineering</h3>
+                <p>Specializes in circuits, communication systems, IoT and embedded systems.</p>
+                <p><b>HOD:</b> Dr. ABC</p>
+                <p>Email: <a href="mailto:ece@sru.edu.in">ece@sru.edu.in</a></p>
+                <p>Phone: <a href="tel:+91000000000">0000000000</a></p>
+            </div>
+
+            <div class="dept-card">
+                <img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f2" alt="Mechanical Engineering">
+                <h3>Mechanical Engineering</h3>
+                <p>Focus on design, manufacturing, materials, and thermal systems.</p>
+                <p><b>HOD:</b> Dr. LMN</p>
+                <p>Email: <a href="mailto:mech@sru.edu.in">mech@sru.edu.in</a></p>
+                <p>Phone: <a href="tel:+91000000000">0000000000</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+
+        <div class="events">
+
+            <div class="event-card">
+                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Tech Event">
+                <h3>AI & Robotics Expo</h3>
+                <p><b>Date:</b> 12 May 2025</p>
+                <p><b>Time:</b> 10 AM – 4 PM</p>
+                <p>An exhibition showcasing AI-driven innovations by students.</p>
+            </div>
+
+            <div class="event-card">
+                <img src="https://images.unsplash.com/photo-1485217988980-11786ced9454" alt="Workshop">
+                <h3>IoT Hands-on Workshop</h3>
+                <p><b>Date:</b> 28 May 2025</p>
+                <p><b>Time:</b> 9 AM – 1 PM</p>
+                <p>Learn real-time IoT applications using embedded systems.</p>
+            </div>
+
+            <div class="event-card">
+                <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b" alt="Tech Talk">
+                <h3>Industry Expert Talk</h3>
+                <p><b>Date:</b> 5 June 2025</p>
+                <p><b>Time:</b> 2 PM – 4 PM</p>
+                <p>A session by leading industrial professionals.</p>
+            </div>
+
+            <div class="event-card">
+                <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" alt="Cultural Fest">
+                <h3>Annual Cultural Fest</h3>
+                <p><b>Date:</b> 15 June 2025</p>
+                <p><b>Time:</b> Full Day</p>
+                <p>A celebration of art, music, and student talent.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter email">
+
+            <label>Message:</label>
+            <textarea rows="5" placeholder="Your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 SR University – SR Connect | All Rights Reserved.
+    </footer>
+
+</body>
+</html>
